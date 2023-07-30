@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
-namespace Assets._Scripts.Scriptables.Event
+[CreateAssetMenu(menuName = "ScriptableObjects/BattleEvent")]
+public class BattleEvent : ScriptableObject
 {
-    class BattleEvent
-    {
-    }
+    public UnityEvent Hit;
+    public UnityEvent<Punch> TakeHit;
 }
