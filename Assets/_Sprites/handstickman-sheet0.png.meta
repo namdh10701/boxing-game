@@ -1,0 +1,1146 @@
+fileFormatVersion: 2
+guid: 8414722edae67044aa31d89be25c498d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: handstickman-sheet0_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 746
+        width: 277
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692cffbf560ba4a4cb940535be18dc06
+      internalID: -1103914804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_1
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 818
+        width: 209
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea0b21d549e8b841a8c7a41d7bac92d
+      internalID: -1046408771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_2
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 983
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885fea20421a3c44b9f411d4df3ae1e1
+      internalID: -2056684954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_3
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1014
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d04a299d9db26e4bb315145ae59d61b
+      internalID: -232124454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_6
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 950
+        width: 39
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df43d338da7385245a491001c515d8e0
+      internalID: 1093354769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_7
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 978
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a260343bc11174aa0cdef56fc9db54
+      internalID: 1872182509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_8
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 620
+        width: 196
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531a5f85b25b35945b6e059e31dc10d1
+      internalID: 988729128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_9
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 796
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8d9282e24d5744fae30fa40ae8ba51
+      internalID: -567151744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 550
+        width: 196
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773be226d754cf544a8eafe5c829334d
+      internalID: 1455779742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_13
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 689
+        width: 105
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f703e616f11bb564ea236d2ab5f5eb13
+      internalID: 1721971825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_14
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 583
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb4365dc2bb3df4ca3257657d595904
+      internalID: -788482016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_15
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 606
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f1e73506f6a514ba22eb6ecdce20bd
+      internalID: 479732695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_16
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 595
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046a3f025e1053841855dc0ef08770ea
+      internalID: 634969839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 525
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545b687b4761b5649a10c6a118499d55
+      internalID: -681797511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_18
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 464
+        width: 98
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a20acde3e849e4185117ca78f6077e
+      internalID: -40407751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_19
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 474
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc38db69e4fd1948b0d200a4d3dae7f
+      internalID: -246623794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_20
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 510
+        width: 36
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bd1da1ea979b54b85a35e980a25061
+      internalID: 968948421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_21
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 500
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ab1a72d89e8b146a8e45fd02c0d81b
+      internalID: -7605381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 419
+        width: 92
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc5fa7c6e9c3ab458256a44fd70fff8
+      internalID: -653884956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_23
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 396
+        width: 101
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7feee3d51b0b1644c919a50c0c7e125f
+      internalID: -1694849322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_24
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 427
+        width: 110
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf9a75451b60974a8ebfd27348a3e85
+      internalID: 684108967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_25
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 366
+        width: 84
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed799b931910a4f4ab7b87dc8d0a2a24
+      internalID: -72092475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_26
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 379
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d28230a03d2ea418f2191e43bd1c0a
+      internalID: -193007073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_27
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 415
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15b4e6934837864a90d3566b182992a
+      internalID: 439924608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 315
+        width: 92
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12404faea2647c4383dee38b9f534f7
+      internalID: -1312165474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_29
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 292
+        width: 101
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c360a80b24a504b80f35d1ad7894ad
+      internalID: -765940790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_30
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 361
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e85d5e8ce7b4d49bb367f7e4e34df3
+      internalID: -1006664987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_31
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 367
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6092783324058954e98930efc6173efd
+      internalID: -45505930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_32
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 325
+        width: 112
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547bc6ed0631e964487b852ff94794ef
+      internalID: 528408010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_34
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 189
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6417351f6b6b9e246919c6cfc801cbca
+      internalID: -441974662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_35
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 219
+        width: 104
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625c8e3f1aa670147b6fcfe52193a988
+      internalID: 669942966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_36
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 225
+        width: 119
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e786ea016a152be46ac048fea53aec6c
+      internalID: 1729153652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_37
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 244
+        width: 109
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cb17045a9926a4bbedcf65a4417cb2
+      internalID: -1914939759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_39
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 221
+        width: 99
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548e1b9b83bfdcc4e9e4d5a06516ecfe
+      internalID: -2146854295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_41
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 112
+        width: 90
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea3c07c879f0ae498126cc70f7f0df9
+      internalID: 180380652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_42
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 110
+        width: 88
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f053d11c9540a4d98bb08fed653ec1
+      internalID: 755623724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_44
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 95
+        width: 102
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b96c930977786429ed732384a06037
+      internalID: -1067853705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_45
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 93
+        width: 109
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0a7e271dc72b5458916b800b60d1ea
+      internalID: -1902804921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_4
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 915
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb447d884c1cbc54d87b598e1734deed
+      internalID: 1079887782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_5
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 878
+        width: 84
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39788dffd9ac1214885dc75a0dded702
+      internalID: 1589689980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_11
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 589
+        width: 84
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a4d8dad5ba26c4cb25c0c34066d3f9
+      internalID: 383552396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_12
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 664
+        width: 84
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba62d178c3436c41b6b4e4af67c2685
+      internalID: 252316919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_33
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 170
+        width: 90
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5449c10cb94174792ee2d9acdda201
+      internalID: -392071130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_38
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 186
+        width: 79
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1dd6742e0fbacb48a7d0dc4540ff7b7
+      internalID: -1208161985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_40
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 104
+        width: 85
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f1001c441299b4c9db415825b6a59f
+      internalID: -692727632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handstickman-sheet0_43
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 119
+        width: 93
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c3b138d4783db4b886d575fb0390e6
+      internalID: -1970846948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      handstickman-sheet0_38: -1208161985
+      handstickman-sheet0_19: -246623794
+      handstickman-sheet0_34: -441974662
+      handstickman-sheet0_26: -193007073
+      handstickman-sheet0_4: 1079887782
+      handstickman-sheet0_12: 252316919
+      handstickman-sheet0_22: -653884956
+      handstickman-sheet0_18: -40407751
+      handstickman-sheet0_10: 1455779742
+      handstickman-sheet0_15: 479732695
+      handstickman-sheet0_40: -692727632
+      handstickman-sheet0_32: 528408010
+      handstickman-sheet0_30: -1006664987
+      handstickman-sheet0_11: 383552396
+      handstickman-sheet0_3: -232124454
+      handstickman-sheet0_20: 968948421
+      handstickman-sheet0_33: -392071130
+      handstickman-sheet0_28: -1312165474
+      handstickman-sheet0_25: -72092475
+      handstickman-sheet0_43: -1970846948
+      handstickman-sheet0_21: -7605381
+      handstickman-sheet0_5: 1589689980
+      handstickman-sheet0_9: -567151744
+      handstickman-sheet0_13: 1721971825
+      handstickman-sheet0_31: -45505930
+      handstickman-sheet0_0: -1103914804
+      handstickman-sheet0_42: 755623724
+      handstickman-sheet0_24: 684108967
+      handstickman-sheet0_16: 634969839
+      handstickman-sheet0_44: -1067853705
+      handstickman-sheet0_14: -788482016
+      handstickman-sheet0_1: -1046408771
+      handstickman-sheet0_35: 669942966
+      handstickman-sheet0_27: 439924608
+      handstickman-sheet0_17: -681797511
+      handstickman-sheet0_36: 1729153652
+      handstickman-sheet0_8: 988729128
+      handstickman-sheet0_37: -1914939759
+      handstickman-sheet0_29: -765940790
+      handstickman-sheet0_2: -2056684954
+      handstickman-sheet0_23: -1694849322
+      handstickman-sheet0_41: 180380652
+      handstickman-sheet0_6: 1093354769
+      handstickman-sheet0_7: 1872182509
+      handstickman-sheet0_45: -1902804921
+      handstickman-sheet0_39: -2146854295
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
