@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e18c1f844a3764ba55163b84f13623, type: 3}
+  m_Name: P2Anim
+  m_EditorClassIdentifier: 
+  LowPunchLeft: {fileID: 7400000, guid: 7929b66e3040fca4887ebcc0b8023350, type: 2}
+  LowPunchRight: {fileID: 7400000, guid: 82983fdb71cd8f04ba639ad44151718a, type: 2}
+  Idle: {fileID: 7400000, guid: f5c49c6e46868994c8887c03a383ad2c, type: 2}
+  HighPunchLeft: {fileID: 7400000, guid: 68e9725b083d6874cadc9ffcf4a42796, type: 2}
+  HighPunchRight: {fileID: 7400000, guid: 6bd6da3a35f94b84e9251b7831b0a52d, type: 2}
+  DodgeLeft: {fileID: 7400000, guid: 02c44f23a6248de46a340c92279ac7e2, type: 2}
+  DodgeRight: {fileID: 7400000, guid: fac520f843b34bc4b84ddabeefd6bf4f, type: 2}
+  Block: {fileID: 7400000, guid: 42ad06ddcbf31e649ad90cdc9ec4fa6b, type: 2}

@@ -19,6 +19,7 @@ public abstract class CharacterState
 
     public virtual void Enter()
     {
+        ElapsedTime = 0;
         _animator.Play(AnimationClip.name);
     }
     public virtual void Update()
@@ -31,7 +32,6 @@ public abstract class CharacterState
     }
     public virtual void Exit()
     {
-        ElapsedTime = 0;
         RequireExit = false;
     }
 }
