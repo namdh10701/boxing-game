@@ -7,6 +7,7 @@ public abstract class CharacterState
         IDLE = 0, BLOCKING = 1, DODGING = 2, PUNCHING = 4
     }
     protected Animator _animator;
+    public StateMachineEvent StateMachineEvent;
     public State CurrentState { get; protected set; }
     public float ElapsedTime { get; protected set; }
     public bool RequireExit { get; protected set; }

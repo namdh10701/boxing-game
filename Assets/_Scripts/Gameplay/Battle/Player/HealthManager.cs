@@ -1,26 +1,26 @@
 using UnityEngine;
 public class HealthManager : MonoBehaviour
 {
-    private PlayerEvent _playerEvent;
+    private CharacterEvent _characterEvent;
+    private CharacterData _characterData;
 
-    public void SetPlayerEvent(PlayerEvent playerEvent)
+    public void Init(CharacterEvent characterEvent, CharacterData characterData)
     {
-        _playerEvent = playerEvent;
-        _playerEvent.TakeHit.AddListener(punch => UpdateHp(punch));
+        _characterEvent = characterEvent;
+        _characterData = characterData;
+        _characterEvent.TakeHit.AddListener(dmgTook => UpdateHp(dmgTook));
     }
-    public CharacterData PlayerData;
-
-    private void UpdateHp(Punch punch)
+    private void UpdateHp(float dmgTook)
     {
-        if (punch == null) return;
-        _playerEvent.HPChanged.Invoke(punch.Dmg);
+        _characterData.HP -= dmgTook;
+        _characterEvent.HPChanged.Invoke();
     }
 
     private void OnDisable()
     {
-        if (_playerEvent != null)
+        if (_characterEvent != null)
         {
-            _playerEvent.TakeHit.RemoveListener(punch => UpdateHp(punch));
+            _characterEvent.TakeHit.RemoveListener(punch => UpdateHp(punch));
         }
     }
 }

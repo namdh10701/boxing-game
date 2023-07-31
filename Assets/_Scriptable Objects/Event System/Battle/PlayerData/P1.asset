@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f8f2e1a9636354fa0895aec4ba3bfc, type: 3}
+  m_Name: P1
+  m_EditorClassIdentifier: 
+  InputEvent: {fileID: 11400000, guid: bfc8eff3951681b468fdbe2cfc4c66c2, type: 2}
+  CharacterEvent: {fileID: 11400000, guid: 979fb29b7373de142886a4398cf3f348, type: 2}
+  CharacterData: {fileID: 11400000, guid: dc66dcc98441793468c79a3dffe359c9, type: 2}

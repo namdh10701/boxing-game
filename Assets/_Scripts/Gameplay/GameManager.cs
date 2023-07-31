@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     {
         BattleManager.Register(player);
         BattleManager.Register(cpu);
-        BattleManager.StartGame();
+        BattleManager.PrepareGame();
+        //BattleManager.StartGame();
     }
 }

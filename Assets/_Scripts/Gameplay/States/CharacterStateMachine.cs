@@ -13,10 +13,8 @@ public class CharacterStateMachine : MonoBehaviour
     public CharacterState CurrentState { get; private set; }
     public AnimCollection AnimCollection;
     public StateMachineEvent StateMachineEvent;
-
-    public void SetStateMachineEvent(StateMachineEvent stateMachineEvent)
+    private void Awake()
     {
-        StateMachineEvent = stateMachineEvent;
         _characterStates[(int)State.IDLE] = new Idle(this, AnimCollection.Idle);
         _characterStates[(int)State.BLOCKING] = new Blocking(this, AnimCollection.Block);
         _characterStates[(int)State.DODGING] = new Dodging(this, AnimCollection.DodgeLeft, DodgingDirection.LEFT);
@@ -25,8 +23,6 @@ public class CharacterStateMachine : MonoBehaviour
         _characterStates[(int)State.PUNCHING + 1] = new Punching(this, AnimCollection.LowPunchRight, PunchingHand.RIGHT, PunchingDirection.LOW, StateMachineEvent);
         _characterStates[(int)State.PUNCHING + 2] = new Punching(this, AnimCollection.HighPunchLeft, PunchingHand.LEFT, PunchingDirection.HIGH, StateMachineEvent);
         _characterStates[(int)State.PUNCHING + 3] = new Punching(this, AnimCollection.HighPunchRight, PunchingHand.RIGHT, PunchingDirection.HIGH, StateMachineEvent);
-
-
 
         CurrentState = _characterStates[(int)State.IDLE];
         CurrentState.Enter();

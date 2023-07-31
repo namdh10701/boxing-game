@@ -5,33 +5,37 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    public InputEvent InputEvent;
+    private InputEvent _inputEvent;
+    public void Init(InputEvent inputEvent)
+    {
+        _inputEvent = inputEvent;
+    }
     public void HighPunch()
     {
-        InputEvent.HighPunch.Invoke();
+        _inputEvent.HighPunch.Invoke();
     }
 
     public void LowPunch()
     {
-        InputEvent.LowPunch.Invoke();
+        _inputEvent.LowPunch.Invoke();
     }
 
     public void Block()
     {
-        InputEvent.Block.Invoke();
+        _inputEvent.Block.Invoke();
     }
     private void StopBlock()
     {
-        InputEvent.ReleaseBlock.Invoke();
+        _inputEvent.ReleaseBlock.Invoke();
     }
 
     public void DodgleLeft()
     {
-        InputEvent.DodgeLeft.Invoke();
+        _inputEvent.DodgeLeft.Invoke();
     }
     public void DodgleRight()
     {
-        InputEvent.DodgeRight.Invoke();
+        _inputEvent.DodgeRight.Invoke();
     }
 
     private void Update()
@@ -65,5 +69,4 @@ public class InputManager : MonoBehaviour
             StopBlock();
         }
     }
-
 }

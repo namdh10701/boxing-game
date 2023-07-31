@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 33899038}
   AnimCollection: {fileID: 11400000, guid: 51c7fce20ae170c4fb4a16e5ac937883, type: 2}
-  StateMachineEvent: {fileID: 0}
+  StateMachineEvent: {fileID: 11400000, guid: 154b944c5f47f154d9e3fe7dfa3f2f9f, type: 2}
 --- !u!114 &33899041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b9420e8bc11a0045ab5377ef79d04c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputEvent: {fileID: 0}
 --- !u!114 &33899042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3452746fcfc83c44abb90cba3b1a0d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerData: {fileID: 0}
 --- !u!114 &33899043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,12 +235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSide: 0
-  PlayerEvent: {fileID: 0}
-  CharacterStateMachine: {fileID: 33899040}
-  CharacterController: {fileID: 33899044}
-  HealthManager: {fileID: 33899042}
-  InputManager: {fileID: 33899041}
-  InputEvent: {fileID: 0}
   IsCPU: 0
 --- !u!114 &33899044
 MonoBehaviour:
@@ -257,8 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StateMachine: {fileID: 33899040}
-  StateMachineEvent: {fileID: 0}
-  PlayerEvent: {fileID: 0}
+  StateMachineEvent: {fileID: 11400000, guid: 154b944c5f47f154d9e3fe7dfa3f2f9f, type: 2}
 --- !u!1 &115600733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +1287,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &650715692
 GameObject:
@@ -1552,6 +1543,56 @@ RectTransform:
   m_AnchoredPosition: {x: 480, y: 0}
   m_SizeDelta: {x: -960, y: -0.000015258789}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &865738795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 865738797}
+  - component: {fileID: 865738796}
+  m_Layer: 0
+  m_Name: UIController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &865738796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865738795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a09324f9db11f64cb281b2daa0b2485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _P1Event: {fileID: 11400000, guid: 979fb29b7373de142886a4398cf3f348, type: 2}
+  _P2Event: {fileID: 11400000, guid: c619a141e123b11409c7b683a6eaa253, type: 2}
+  _P1Data: {fileID: 11400000, guid: dc66dcc98441793468c79a3dffe359c9, type: 2}
+  _P2Data: {fileID: 11400000, guid: e53c703769541a34bbdd43865aedaeb4, type: 2}
+  _P1HPBar: {fileID: 2136529651}
+  _P2HPBar: {fileID: 893090578}
+--- !u!4 &865738797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865738795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 155.54506, y: 152.74675, z: -0.51054925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &868161712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,7 +1721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5414665915253b4cacd10a57dc8256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BattleEvent: {fileID: 11400000, guid: 60e7c7205c26ccf44a302ddc730eb11c, type: 2}
+  BattleData: {fileID: 11400000, guid: 60e7c7205c26ccf44a302ddc730eb11c, type: 2}
 --- !u!1 &893090576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,7 +1946,7 @@ Transform:
   - {fileID: 33899037}
   - {fileID: 2142569671}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1036808671
 GameObject:
@@ -3218,7 +3259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 2142569670}
   AnimCollection: {fileID: 11400000, guid: 9228b5d5bd1ad6e438f4eda51c722948, type: 2}
-  StateMachineEvent: {fileID: 0}
+  StateMachineEvent: {fileID: 11400000, guid: 909034c2ed9c3bb4aa386c51dcee5c44, type: 2}
 --- !u!114 &2142569673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3232,12 +3273,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSide: 1
-  PlayerEvent: {fileID: 0}
-  CharacterStateMachine: {fileID: 2142569672}
-  CharacterController: {fileID: 2142569674}
-  HealthManager: {fileID: 2142569675}
-  InputManager: {fileID: 0}
-  InputEvent: {fileID: 0}
   IsCPU: 1
 --- !u!114 &2142569674
 MonoBehaviour:
@@ -3252,8 +3287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StateMachine: {fileID: 2142569672}
-  StateMachineEvent: {fileID: 0}
-  PlayerEvent: {fileID: 0}
+  StateMachineEvent: {fileID: 11400000, guid: 909034c2ed9c3bb4aa386c51dcee5c44, type: 2}
 --- !u!114 &2142569675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3266,4 +3300,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3452746fcfc83c44abb90cba3b1a0d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerData: {fileID: 0}

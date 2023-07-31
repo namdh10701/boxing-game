@@ -12,11 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b1e3214b4db154fbb17343db768fe3, type: 3}
   m_Name: Battle Event
   m_EditorClassIdentifier: 
-  P1Event: {fileID: 11400000, guid: 979fb29b7373de142886a4398cf3f348, type: 2}
-  P2Event: {fileID: 11400000, guid: c619a141e123b11409c7b683a6eaa253, type: 2}
-  P1Input: {fileID: 11400000, guid: bfc8eff3951681b468fdbe2cfc4c66c2, type: 2}
-  P2Input: {fileID: 11400000, guid: 34cc6ddaedae80c44958e2038cf78f7d, type: 2}
-  P1Data: {fileID: 11400000, guid: dc66dcc98441793468c79a3dffe359c9, type: 2}
-  P2Data: {fileID: 11400000, guid: e53c703769541a34bbdd43865aedaeb4, type: 2}
-  P1StateMachine: {fileID: 11400000, guid: 154b944c5f47f154d9e3fe7dfa3f2f9f, type: 2}
-  P2StateMachine: {fileID: 11400000, guid: 909034c2ed9c3bb4aa386c51dcee5c44, type: 2}
+  P1Data: {fileID: 11400000, guid: 3d1b093bd92423144859a2b509ad3741, type: 2}
+  P2Data: {fileID: 11400000, guid: 68593c4d16ec023468ddbc1f95f7ff39, type: 2}

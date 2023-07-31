@@ -1,35 +1,54 @@
 ﻿using UnityEngine;
+using static Player;
 public class BattleManager : MonoBehaviour
 {
-    public enum PlayerSide
-    {
-        P1, P2
-    }
-    public enum BattleState
-    {
-        INTRODUCING, RUNNING, PAUSE, STOP
-    }
-    private Player[] _players;
-    public BattleEvent BattleEvent;
+    public BattleData BattleData;
+    private Player _p1 { get; set; }
+    private Player _p2 { get; set; }
 
-    private void Awake()
+    public void Register(Player player)
     {
-        _players = new Player[2];
-    }
-    public Player Register(Player player)
-    {
-        int playerIndex = _players.GetNearestAvailablePos();
-        if (playerIndex != -1)
+        if (player.PlayerSide == Side.P1)
         {
-            player.PlayerSide = playerIndex == 0 ? PlayerSide.P1 : PlayerSide.P2;
-            _players[playerIndex] = player;
-            BattleEvent.Register(player);
-            player.Init();
-            return player;
+            if (_p1 == null)
+            {
+                _p1 = player;
+                _p1.PlayerData = BattleData.P1Data;
+            }
+            else
+                Debug.LogError("P1 has been assigned");
         }
-        return null;
+        else
+        {
+            if (_p2 == null)
+            {
+                _p2 = player;
+                _p2.PlayerData = BattleData.P2Data;
+            }
+            else
+                Debug.LogError("P2 has been assigned");
+        }
+        player.Init();
     }
-    public void StartGame()
+
+    public void PrepareGame()
     {
+        if (_p1 == null || _p2 == null)
+        {
+            Debug.LogWarning(_p1 == null ? "P1 has not assigned" : ""
+                + _p2 == null ? "\n P2 has not assigned" : "");
+            return;
+        }
+
+        _p1.PlayerData.CharacterEvent.PunchThrowed.AddListener(
+            (punch) => _p2.CharacterController.TakeHit(punch)
+            );
+        _p2.PlayerData.CharacterEvent.PunchThrowed.AddListener(
+            (punch) => _p1.CharacterController.TakeHit(punch)
+            );
+        Debug.Log("Game prepared, ready to begin");
     }
 }
+
+
+

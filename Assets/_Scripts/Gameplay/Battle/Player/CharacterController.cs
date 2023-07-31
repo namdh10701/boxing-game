@@ -1,28 +1,24 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using UnityEngine;
 using static CharacterState;
 using static Dodging;
+using static Player;
 using static Punching;
 
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] private CharacterStateMachine StateMachine;
     private InputEvent _inputEvent;
+    private CharacterEvent _characterEvent;
+    public Side PlayerSide { get; private set; }
+    public bool IsCpu { get; private set; }
     public StateMachineEvent StateMachineEvent;
 
-    public void SetStateMachineEvent(StateMachineEvent stateMachineEvent)
+
+    public void Init(CharacterEvent characterEvent, InputEvent inputEvent, Side playerSide)
     {
-        StateMachineEvent = stateMachineEvent;
-        StateMachineEvent.Punch.AddListener((hand, direction) => ThrowPunch(hand, direction));
-    }
-
-
-    public PlayerEvent PlayerEvent;
-
-
-    public void SetInputEvent(InputEvent inputEvent)
-    {
+        PlayerSide = playerSide;
+        IsCpu = false;
+        _characterEvent = characterEvent;
         _inputEvent = inputEvent;
         _inputEvent.Block.AddListener(Block);
         _inputEvent.ReleaseBlock.AddListener(StopBlock);
@@ -30,7 +26,13 @@ public class CharacterController : MonoBehaviour
         _inputEvent.DodgeRight.AddListener(() => Dodge(DodgingDirection.RIGHT));
         _inputEvent.LowPunch.AddListener(() => Punch(PunchingDirection.LOW));
         _inputEvent.HighPunch.AddListener(() => Punch(PunchingDirection.HIGH));
+    }
 
+    public void Init(CharacterEvent characterEvent, Side playerSide)
+    {
+        _characterEvent = characterEvent;
+        PlayerSide = playerSide;
+        IsCpu = true;
     }
 
     #region All player actions
@@ -59,15 +61,14 @@ public class CharacterController : MonoBehaviour
     }
     private void ThrowPunch(PunchingHand hand, PunchingDirection direction)
     {
-        Debug.Log("Punch1");
+        Debug.Log($"{PlayerSide} throwed {hand} {direction} punch");
         Punch punch = new Punch(10, hand, direction);
-
-        PlayerEvent.PunchThrowed.Invoke(punch);
+        _characterEvent.PunchThrowed.Invoke(punch);
     }
 
     public void TakeHit(Punch punch)
     {
-        Debug.Log($"took {punch.Dmg} || {punch.PunchHand} || {punch.Direction}");
+        Debug.Log($"{PlayerSide} took {punch.Dmg} || {punch.PunchHand} || {punch.Direction}");
         float DmgTakePercent = 100;
         switch (StateMachine.CurrentState)
         {
@@ -84,14 +85,21 @@ public class CharacterController : MonoBehaviour
                 DmgTakePercent = 50;
                 break;
         }
-        punch.Dmg *= DmgTakePercent;
-        PlayerEvent.TakeHit.Invoke(punch);
+        punch.Dmg *= DmgTakePercent / 100;
+        _characterEvent.TakeHit.Invoke(punch.Dmg);
     }
     #endregion
 
+    private void OnEnable()
+    {
+        StateMachineEvent.Punch.AddListener((hand, direction) =>
+        {
+            ThrowPunch(hand, direction);
+        });
+    }
     private void OnDisable()
     {
-        if (_inputEvent != null)
+        if (_inputEvent != null && !IsCpu)
         {
             _inputEvent.Block.RemoveListener(Block);
             _inputEvent.ReleaseBlock.RemoveListener(StopBlock);
@@ -100,5 +108,9 @@ public class CharacterController : MonoBehaviour
             _inputEvent.LowPunch.RemoveListener(() => Punch(PunchingDirection.LOW));
             _inputEvent.HighPunch.RemoveListener(() => Punch(PunchingDirection.HIGH));
         }
+        StateMachineEvent.Punch.RemoveListener((hand, direction) =>
+        {
+            ThrowPunch(hand, direction);
+        });
     }
 }

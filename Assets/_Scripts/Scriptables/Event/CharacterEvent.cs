@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/PlayerEvent")]
-public class PlayerEvent : ScriptableObject
+public class CharacterEvent : ScriptableObject
 {
     public UnityEvent<Punch> PunchThrowed;
-    public UnityEvent<Punch> TakeHit;
-    public UnityEvent<float> HPChanged;
+    public UnityEvent<float> TakeHit;
+    public UnityEvent HPChanged;
 }

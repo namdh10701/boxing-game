@@ -15,7 +15,7 @@ public class Punching : CharacterState
     }
 
     private bool _eventTriggered = false;
-    public StateMachineEvent StateMachineEvent;
+    
     public PunchingHand PunchHand { get; private set; }
     public PunchingDirection PunchDirection { get; private set; }
     public Punching(CharacterStateMachine characterStateMachine, AnimationClip anim, PunchingHand punchHand, PunchingDirection punchDirection,
@@ -33,7 +33,6 @@ public class Punching : CharacterState
         base.Update();
         if (ElapsedTime >= AnimationClip.length / 2 && !_eventTriggered)
         {
-            Debug.Log("Punch");
             StateMachineEvent.Punch.Invoke(PunchHand, PunchDirection);
             _eventTriggered = true;
         }
