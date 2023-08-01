@@ -8,10 +8,9 @@ public class Dodging : CharacterState
     }
     public DodgingDirection DodgeDirection { get; private set; }
 
-    public Dodging(CharacterStateMachine characterStateMachine, AnimationClip anim, DodgingDirection dodgingDirection) : base(characterStateMachine)
+    public Dodging(CharacterStateMachine characterStateMachine, AnimationClip anim, DodgingDirection dodgingDirection) : base(characterStateMachine, anim)
     {
         DodgeDirection = dodgingDirection;
         CurrentState = State.DODGING;
-        this.AnimationClip = anim;
     }
 }

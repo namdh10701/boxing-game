@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24b1e3214b4db154fbb17343db768fe3, type: 3}
-  m_Name: Battle Event
+  m_Script: {fileID: 11500000, guid: 6601893d09ef45c49930cc91b0bd4884, type: 3}
+  m_Name: BasicCharacterData
   m_EditorClassIdentifier: 
-  P1Data: {fileID: 11400000, guid: 3d1b093bd92423144859a2b509ad3741, type: 2}
-  P2Data: {fileID: 11400000, guid: 68593c4d16ec023468ddbc1f95f7ff39, type: 2}
+  MaxHP: 100
+  HP: 100

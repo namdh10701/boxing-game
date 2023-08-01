@@ -4,10 +4,10 @@ using UnityEngine.Events;
 [CreateAssetMenu(menuName = "ScriptableObjects/InputEvent")]
 public class InputEvent : ScriptableObject
 {
-    public UnityEvent HighPunch;
-    public UnityEvent LowPunch;
-    public UnityEvent Block;
-    public UnityEvent ReleaseBlock;
-    public UnityEvent DodgeLeft;
-    public UnityEvent DodgeRight;
+    public UnityEvent HighPunch = new UnityEvent();
+    public UnityEvent LowPunch = new UnityEvent();
+    public UnityEvent Block = new UnityEvent();
+    public UnityEvent ReleaseBlock = new UnityEvent();
+    public UnityEvent DodgeLeft = new UnityEvent();
+    public UnityEvent DodgeRight = new UnityEvent();
 }

@@ -3,10 +3,9 @@
 public class Blocking : CharacterState
 {
     public bool RequireTimerRun;
-    public Blocking(CharacterStateMachine characterController, AnimationClip blockAnim) : base(characterController)
+    public Blocking(CharacterStateMachine characterController, AnimationClip anim) : base(characterController, anim)
     {
         CurrentState = State.BLOCKING;
-        AnimationClip = blockAnim;
     }
 
     public override void Enter()

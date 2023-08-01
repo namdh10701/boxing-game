@@ -3,8 +3,15 @@ using static Player;
 public class BattleManager : MonoBehaviour
 {
     public BattleData BattleData;
+    [SerializeField] private UIController _UIController;
     private Player _p1 { get; set; }
     private Player _p2 { get; set; }
+
+    private void Awake()
+    {
+        BattleData = BattleData.CreateNewBattleData();
+        _UIController.Init(BattleData);
+    }
 
     public void Register(Player player)
     {
@@ -47,6 +54,24 @@ public class BattleManager : MonoBehaviour
             (punch) => _p1.CharacterController.TakeHit(punch)
             );
         Debug.Log("Game prepared, ready to begin");
+    }
+
+    private void Update()
+    {
+        if (BattleData.P1Data.CharacterData.HP <= 0
+            || BattleData.P2Data.CharacterData.HP <= 0)
+        {
+            Time.timeScale = 0;
+            if (BattleData.P1Data.CharacterData.HP > BattleData.P2Data.CharacterData.HP)
+            {
+                _UIController.P1Won();
+            }
+            else
+            {
+
+                _UIController.P2Won();
+            }
+        }
     }
 }
 

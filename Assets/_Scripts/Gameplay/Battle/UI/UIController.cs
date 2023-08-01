@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
+using System.Runtime.Remoting;
 using UnityEngine;
 using UnityEngine.UI;
 using static Punching;
+
 public class UIController : MonoBehaviour
 {
     public enum PlayerSide
@@ -9,51 +12,56 @@ public class UIController : MonoBehaviour
         P1, P2
     }
 
-    [SerializeField] private CharacterEvent _P1Event;
-    [SerializeField] private CharacterEvent _P2Event;
+    private CharacterEvent _P1Event;
+    private CharacterEvent _P2Event;
 
-    [SerializeField] private CharacterData _P1Data;
-    [SerializeField] private CharacterData _P2Data;
+    private CharacterData _P1Data;
+    private CharacterData _P2Data;
 
     [SerializeField] private Image _P1HPBar;
     [SerializeField] private Image _P2HPBar;
 
+    [SerializeField] private GameObject _P1Won;
+    [SerializeField] private GameObject _P1Lose;
+
     private Coroutine _updatingHp;
-    private float targetHp;
 
-    private void HandlePunchEffect(Punch punch, PlayerSide player)
+    public void Init(BattleData battleData)
     {
-        if (player == PlayerSide.P1)
-        {
-            if (punch.Direction == PunchingDirection.LOW)
-            {
+        _P1Event = battleData.P1Data.CharacterEvent;
+        _P2Event = battleData.P2Data.CharacterEvent;
 
-            }
-            else
-            {
+        _P1Data = battleData.P1Data.CharacterData;
+        _P2Data = battleData.P2Data.CharacterData;
 
-            }
-        }
-        else
-        {
-            if (punch.Direction == PunchingDirection.LOW)
-            {
 
-            }
-            else
-            {
+        _P1Event.HPChanged.AddListener(() => UpdateHPBar(PlayerSide.P1));
+        _P2Event.HPChanged.AddListener(() => UpdateHPBar(PlayerSide.P2));
 
-            }
-        }
+
     }
 
     private void UpdateHPBar(PlayerSide player)
-    {
+    {/*
         if (_updatingHp != null)
         {
             StopCoroutine(_updatingHp);
         }
-        _updatingHp = StartCoroutine(UpdateHPBarCoroutine(player));
+        _updatingHp = StartCoroutine(UpdateHPBarCoroutine(player));*/
+        Image targetHPBar;
+        CharacterData playerData;
+        if (player == PlayerSide.P1)
+        {
+            targetHPBar = _P1HPBar;
+            playerData = _P1Data;
+        }
+        else
+        {
+            targetHPBar = _P2HPBar;
+            playerData = _P2Data;
+        }
+        targetHPBar.fillAmount = playerData.HP / playerData.MaxHP;
+
     }
 
     private IEnumerator UpdateHPBarCoroutine(PlayerSide player)
@@ -75,26 +83,31 @@ public class UIController : MonoBehaviour
         float initialFillAmount = targetHPBar.fillAmount;
         float targetFillAmount = playerData.HP / playerData.MaxHP;
         float elapsedTime = 0f;
-        float speed = 0.01f * Time.deltaTime;
-        float calculatedTime = (targetFillAmount - initialFillAmount) / speed;
-        while (elapsedTime <= calculatedTime)
+        float progress = 0;
+        float duration = 1;
+        while (progress <= 1)
         {
             elapsedTime += Time.deltaTime;
-            targetHPBar.fillAmount = Mathf.Lerp(initialFillAmount, targetFillAmount, speed);
+            progress = elapsedTime / duration;
+            targetHPBar.fillAmount = Mathf.Lerp(initialFillAmount, targetFillAmount, progress);
             yield return null;
         }
         targetHPBar.fillAmount = targetFillAmount;
-    }
-
-    private void OnEnable()
-    {
-        _P1Event.HPChanged.AddListener(() => UpdateHPBar(PlayerSide.P1));
-        _P2Event.HPChanged.AddListener(() => UpdateHPBar(PlayerSide.P2));
     }
 
     private void OnDisable()
     {
         _P1Event.HPChanged.AddListener(() => UpdateHPBar(PlayerSide.P1));
         _P2Event.HPChanged.AddListener(() => UpdateHPBar(PlayerSide.P2));
+    }
+
+    internal void P1Won()
+    {
+        _P1Won.SetActive(true);
+    }
+
+    internal void P2Won()
+    {
+        _P1Lose.SetActive(true);
     }
 }

@@ -20,3 +20,5 @@ MonoBehaviour:
   DodgeLeft: {fileID: 7400000, guid: 02c44f23a6248de46a340c92279ac7e2, type: 2}
   DodgeRight: {fileID: 7400000, guid: fac520f843b34bc4b84ddabeefd6bf4f, type: 2}
   Block: {fileID: 7400000, guid: 42ad06ddcbf31e649ad90cdc9ec4fa6b, type: 2}
+  TakingLowHit: {fileID: 7400000, guid: 893d40961155e2240a3d173649daaefc, type: 2}
+  TakingHighHit: {fileID: 7400000, guid: 31c9cfd125edeff44b7bacfb299b0458, type: 2}

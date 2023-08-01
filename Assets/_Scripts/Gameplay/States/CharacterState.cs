@@ -4,7 +4,8 @@ public abstract class CharacterState
 {
     public enum State
     {
-        IDLE = 0, BLOCKING = 1, DODGING = 2, PUNCHING = 4
+        IDLE = 0, BLOCKING = 1, DODGING = 2, PUNCHING = 4,
+        TAKING_HIT = 8
     }
     protected Animator _animator;
     public StateMachineEvent StateMachineEvent;
@@ -13,9 +14,10 @@ public abstract class CharacterState
     public bool RequireExit { get; protected set; }
     public AnimationClip AnimationClip { get; set; }
 
-    public CharacterState(CharacterStateMachine characterController)
+    public CharacterState(CharacterStateMachine characterStateMachine, AnimationClip anim)
     {
-        _animator = characterController.Animator;
+        _animator = characterStateMachine.Animator;
+        AnimationClip = anim;
     }
 
     public virtual void Enter()

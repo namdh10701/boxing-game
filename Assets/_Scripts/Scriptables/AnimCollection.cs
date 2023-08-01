@@ -12,4 +12,6 @@ public class AnimCollection : ScriptableObject
     public AnimationClip DodgeLeft;
     public AnimationClip DodgeRight;
     public AnimationClip Block;
+    public AnimationClip TakingLowHit;
+    public AnimationClip TakingHighHit;
 }

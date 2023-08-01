@@ -8,10 +8,11 @@ public class HealthManager : MonoBehaviour
     {
         _characterEvent = characterEvent;
         _characterData = characterData;
-        _characterEvent.TakeHit.AddListener(dmgTook => UpdateHp(dmgTook));
+        _characterEvent.TakeHit.AddListener(punch => UpdateHp(punch));
     }
-    private void UpdateHp(float dmgTook)
+    private void UpdateHp(Punch punchTook)
     {
+        float dmgTook = punchTook.Dmg;
         _characterData.HP -= dmgTook;
         _characterEvent.HPChanged.Invoke();
     }

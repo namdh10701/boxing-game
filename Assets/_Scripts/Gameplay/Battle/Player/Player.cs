@@ -37,12 +37,12 @@ public class Player : MonoBehaviour
 
         if (IsCPU)
         {
-            CharacterController.Init(PlayerData.CharacterEvent, Side.P2);
+            CharacterController.Init(PlayerData.CharacterEvent, PlayerData.InputEvent, Side.P2, IsCPU);
         }
         else
         {
             InputManager.Init(PlayerData.InputEvent);
-            CharacterController.Init(PlayerData.CharacterEvent, PlayerData.InputEvent, Side.P1);
+            CharacterController.Init(PlayerData.CharacterEvent, PlayerData.InputEvent, Side.P1, IsCPU);
         }
         HealthManager.Init(PlayerData.CharacterEvent, PlayerData.CharacterData);
         IsReady = true;
